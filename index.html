@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>NCAPI - ACG 二次元幼态审美与角色原型偏好评估量表</title>
+  <meta name="description" content="基于心理测量学与东浩纪数据库理论构建的 ACG 虚拟美学与角色原型偏好评估模型。严格区分虚拟与现实。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <div class="page-container">
+    <!-- 顶部导航条 -->
+    <header class="app-header">
+      <div class="logo-area">
+        <span class="logo-badge">NCAPI 2.0</span>
+        <h1 class="logo-title">ACG 虚拟角色原型与审美偏好测评</h1>
+      </div>
+      <div class="header-status">
+        <span class="status-indicator"></span>
+        <span class="status-text">信度校验与常模校准系统运行中</span>
+      </div>
+    </header>
+
+    <!-- 顶层严肃合规与法律边界声明条 -->
+    <div class="compliance-banner">
+      <div class="banner-icon">⚖️</div>
+      <div class="banner-content">
+        <strong>【严格内容边界与现实割裂声明】</strong>
+        本测评仅针对 <strong>ACG（动画、漫画、游戏）虚构文化体系下的形式美学符号、萌要素数据库与叙事原型</strong> 进行心理学与亚文化研究探讨。所有题目与分析对象均为<strong>绝对虚构的二次元非现实形象</strong>。模型设计内嵌“现实认知结界”红线，坚决拥护保护未成年人身心健康的法律与社会伦理，严禁任何形式的现实投射。
+      </div>
+    </div>
+
+    <!-- 主展示容器 -->
+    <main class="main-content">
+
+      <!-- ================= 阶段 1：介绍与测前准备 ================= -->
+      <section id="screen-welcome" class="flow-screen active">
+        <div class="welcome-card glass-panel">
+          <div class="card-hero">
+            <span class="hero-tag">PSYCHOMETRIC & DATABASE THEORY</span>
+            <h2>解构二次元萌系符号的心理学原型</h2>
+            <p class="hero-desc">
+              为何我们会被二次元娇小身形的角色所打动？是因为被激发的“老父亲/老母亲”式利他抚育欲？还是对“千岁神明/古老真祖”戏剧反差（Gap-Moe）的审美叹服？抑或是在现实压力下对纯真避风港的心理退行？
+            </p>
+          </div>
+
+          <!-- 理论与模型框架卡片 -->
+          <div class="theory-grid">
+            <div class="theory-item">
+              <div class="theory-icon">🧩</div>
+              <div class="theory-text">
+                <h4>东浩纪·数据库萌要素理论</h4>
+                <p>将娇小体态、特定服饰发型等视作二次元审美数据库中的独立美学符号单元进行解析。</p>
+              </div>
+            </div>
+            <div class="theory-item">
+              <div class="theory-icon">🛡️</div>
+              <div class="theory-text">
+                <h4>洛伦兹·婴儿图式与抚育移情</h4>
+                <p>探索人类对于天真无邪意象的本能关爱系统在虚拟超现实对象上的健康升华。</p>
+              </div>
+            </div>
+            <div class="theory-item">
+              <div class="theory-icon">⚡</div>
+              <div class="theory-text">
+                <h4>叙事反差与神性超验</h4>
+                <p>评估受测者对“娇小体态蕴含毁天灭地伟力或千年沧桑宿命”的戏剧反差偏好。</p>
+              </div>
+            </div>
+            <div class="theory-item">
+              <div class="theory-icon">📊</div>
+              <div class="theory-text">
+                <h4>T-分数常模与防作弊风控</h4>
+                <p>具备对偶逻辑互锁、直线作答排查、阅读耗时节奏分析与客户端指纹防刷校验。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 评测须知 -->
+          <div class="test-notice">
+            <h3>📝 作答须知与防作弊指引</h3>
+            <ul>
+              <li><strong>题目总数：</strong>全卷共 24 道精研题目，预计耗时约 2~3 分钟。</li>
+              <li><strong>防刷与信度分析：</strong>系统全程记录作答耗时曲线与节奏方差，单题秒选（&lt;1秒）或全卷极速盲点将触发“作答无效”熔断。</li>
+              <li><strong>对偶测谎题：</strong>问卷中嵌有逻辑互斥对照组与质检锚点题，请依据自身真实内心体验作答。</li>
+              <li><strong>计分标准：</strong>采用标准化 T-分数（常模均值 50，标准差 10）与人群百分位换算。</li>
+            </ul>
+          </div>
+
+          <div class="action-footer">
+            <button id="btn-start" class="btn btn-primary btn-glow">
+              <span>同意声明并开始测评</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 阶段 2：答题交互界面 ================= -->
+      <section id="screen-test" class="flow-screen">
+        <div class="test-card glass-panel">
+          <!-- 进度监控条 -->
+          <div class="test-header">
+            <div class="progress-info">
+              <span class="progress-step" id="q-counter">第 1 / 24 题</span>
+              <span class="progress-pct" id="q-percent">4%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="progress-bar"></div>
+            </div>
+            <div class="pacing-badge" id="pacing-status">
+              <span class="pulse-dot"></span>
+              <span id="pacing-text">答题节奏正常</span>
+            </div>
+          </div>
+
+          <!-- 题干展示区 -->
+          <div class="question-container">
+            <div class="question-badge" id="q-badge">题目评估项</div>
+            <h3 class="question-text" id="q-text">正在初始化题目...</h3>
+            <p class="question-tip">请依据您在接触动漫、漫画、游戏（ACG）作品时的真实感受选择最符合的一项：</p>
+          </div>
+
+          <!-- 5点 Likert 选项组 -->
+          <div class="options-group" id="options-container">
+            <button class="option-btn" data-value="1">
+              <span class="option-num">1</span>
+              <span class="option-label">完全不符合</span>
+              <span class="option-sub">内心毫无同感或强烈反对</span>
+            </button>
+            <button class="option-btn" data-value="2">
+              <span class="option-num">2</span>
+              <span class="option-label">比较不符合</span>
+              <span class="option-sub">大部分情况下不属于此类特征</span>
+            </button>
+            <button class="option-btn" data-value="3">
+              <span class="option-num">3</span>
+              <span class="option-label">中立 / 视情况</span>
+              <span class="option-sub">无明显偏向或取决于具体作品</span>
+            </button>
+            <button class="option-btn" data-value="4">
+              <span class="option-num">4</span>
+              <span class="option-label">比较符合</span>
+              <span class="option-sub">较常产生此类审美共鸣与体验</span>
+            </button>
+            <button class="option-btn" data-value="5">
+              <span class="option-num">5</span>
+              <span class="option-label">完全符合</span>
+              <span class="option-sub">极度认同，精准契合内心审美核心</span>
+            </button>
+          </div>
+
+          <!-- 答题导航控制栏 -->
+          <div class="test-controls">
+            <button id="btn-prev" class="btn btn-secondary" disabled>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>上一题</span>
+            </button>
+            <div class="keyboard-tip">
+              <span>提示：支持按键盘数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 快速作答</span>
+            </div>
+            <button id="btn-next" class="btn btn-primary" disabled>
+              <span>下一题</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 阶段 3：计算与神经校准过渡动画 ================= -->
+      <section id="screen-loading" class="flow-screen">
+        <div class="loading-card glass-panel">
+          <div class="radar-scan-anim">
+            <div class="scan-ring ring-1"></div>
+            <div class="scan-ring ring-2"></div>
+            <div class="scan-ring ring-3"></div>
+            <div class="scan-line"></div>
+          </div>
+          <h3 class="loading-title">正在执行心理测量学多维矩阵校准</h3>
+          <p class="loading-subtitle" id="loading-stage-text">正在启动大样本常模 T-分数映射...</p>
+
+          <div class="check-stages">
+            <div class="stage-step" id="stage-1"><span class="step-icon">⏳</span> <span>时间节奏与作答变异系数（CV）检验</span></div>
+            <div class="stage-step" id="stage-2"><span class="step-icon">⏳</span> <span>对偶题目互斥逻辑与直线作答排查</span></div>
+            <div class="stage-step" id="stage-3"><span class="step-icon">⏳</span> <span>虚拟-现实认知结界效度红线校验</span></div>
+            <div class="stage-step" id="stage-4"><span class="step-icon">⏳</span> <span>五大因子权重收敛与常模分位合成</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 阶段 4：深度诊断结果报告页 ================= -->
+      <section id="screen-result" class="flow-screen">
+        <div class="result-wrapper">
+
+          <!-- 报告主头部：原型称号与主判语 -->
+          <div class="result-header-card glass-panel" id="report-card-capture">
+            <div class="result-top-bar">
+              <span class="report-badge">NCAPI 综合心理评估报告</span>
+              <span class="cert-code" id="res-cert-hash">CERT: #XXXX-XXXX</span>
+            </div>
+            
+            <div class="archetype-hero">
+              <div class="archetype-sub">受测者核心心理投射原型</div>
+              <h2 class="archetype-name" id="res-arch-name">【慈父圣光型·纯白守护者】</h2>
+              <p class="archetype-tagline" id="res-arch-tagline">“愿世间风雨不染其衣，以守护之名成就纯粹救赎”</p>
+            </div>
+
+            <!-- 巨幕级 0-100 加权总分与娱乐性锐评展示区 -->
+            <div class="grand-score-container">
+              <div class="score-badge-pill">
+                <span class="fire-icon">🔥</span>
+                <span class="score-badge-text">二次元萌系偏好综合共振指数</span>
+                <span class="score-grade-badge" id="res-score-grade">SSS 级</span>
+              </div>
+
+              <div class="score-hero-display">
+                <div class="score-number-box">
+                  <span class="score-number" id="res-grand-score">0</span>
+                  <span class="score-unit">/ 100</span>
+                </div>
+                <div class="score-percentile-pill" id="res-grand-percentile">
+                  超越了全网 94.6% 的二次元鉴赏家
+                </div>
+              </div>
+
+              <!-- 犀利毒舌锐评卡片 -->
+              <div class="sharp-critique-card">
+                <div class="critique-header">
+                  <span class="critique-icon">⚡</span>
+                  <span class="critique-title">量表犀利锐评 · 灵魂解剖</span>
+                </div>
+                <p class="critique-content" id="res-critique-text">
+                  正在生成专属锐评...
+                </p>
+              </div>
+            </div>
+
+            <div class="archetype-desc-box">
+              <p id="res-arch-desc">你的心理投射呈现出极其鲜明的“监护人原型”与“利他主义守护欲”...</p>
+            </div>
+
+            <!-- 核心数据看板：雷达图与五维总览 -->
+            <div class="chart-and-summary-grid">
+              <div class="chart-box">
+                <div class="chart-title-bar">
+                  <h4>五维心理雷达图谱 (T-Score)</h4>
+                  <span class="chart-legend-tip">● 个人常模分 (基准: 50)</span>
+                </div>
+                <div class="canvas-wrapper">
+                  <canvas id="radarCanvas" width="460" height="420"></canvas>
+                </div>
+              </div>
+
+              <!-- 维度快速指标表 -->
+              <div class="dimensions-summary-col" id="dim-cards-container">
+                <!-- 动态填充 5 个维度的指标卡片 -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 各维度深度心理学与文学意象解析 -->
+          <div class="deep-analysis-section glass-panel">
+            <h3 class="section-title">
+              <span class="title-icon">📖</span>
+              <span>各评估维度深度心理学解构与动漫典型意象</span>
+            </h3>
+            <div class="dimension-deep-grid" id="dim-deep-container">
+              <!-- 动态填充 5 个维度的详细阐释 -->
+            </div>
+          </div>
+
+          <!-- 底层防作弊与作答信度审计卡 -->
+          <div class="audit-card glass-panel">
+            <div class="audit-header">
+              <div class="audit-title-group">
+                <span class="shield-icon">🛡️</span>
+                <h3>作答质量与底层风控诊断报告</h3>
+              </div>
+              <div class="reliability-score-badge" id="audit-reliability-badge">
+                <span class="score-label">信度指数</span>
+                <span class="score-val" id="res-reliability-val">98</span>
+                <span class="score-level" id="res-reliability-level">极高可信</span>
+              </div>
+            </div>
+
+            <div class="audit-metrics-grid">
+              <div class="metric-item">
+                <span class="m-label">作答总耗时</span>
+                <span class="m-val" id="audit-duration">115 秒</span>
+                <span class="m-note" id="audit-duration-note">处于生理认知阅读合理区间</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-label">连续同选偏差</span>
+                <span class="m-val" id="audit-straight">1 题</span>
+                <span class="m-note" id="audit-straight-note">无直线作答敷衍痕迹</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-label">两极作答率</span>
+                <span class="m-val" id="audit-extreme">16.7%</span>
+                <span class="m-note" id="audit-extreme-note">辨析充分，未见极端化作答</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-label">对偶互锁逻辑校验</span>
+                <span class="m-val status-ok" id="audit-pair">完全自洽</span>
+                <span class="m-note">对偶反转题逻辑分歧 ≤ 1</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-label">注意力测谎质检</span>
+                <span class="m-val status-ok" id="audit-trap">精准通过</span>
+                <span class="m-note">锚点陷阱题命中符合预期</span>
+              </div>
+              <div class="metric-item">
+                <span class="m-label">虚实结界红线判定</span>
+                <span class="m-val status-ok" id="audit-boundary">稳固达标</span>
+                <span class="m-note">现实道德法律红线认知清晰</span>
+              </div>
+            </div>
+
+            <!-- 作答异常警示列表（若有） -->
+            <div class="audit-flags-area" id="audit-flags-box" style="display: none;">
+              <h4>⚠️ 系统检测到的作答偏倚与风控标记：</h4>
+              <ul id="audit-flags-list"></ul>
+            </div>
+          </div>
+
+          <!-- 结果页操作按钮组 -->
+          <div class="result-actions">
+            <button id="btn-copy-summary" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>复制诊断简报</span>
+            </button>
+            <button id="btn-retake" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"></path><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+              <span>重新进行测评</span>
+            </button>
+          </div>
+
+          <!-- 学术参考文献与伦理背书 -->
+          <footer class="result-footer glass-panel">
+            <h4>📚 心理测量学理论依据与参考文献</h4>
+            <ol>
+              <li><strong>Azuma, H. (2001).</strong> <em>Otaku: Japan's Database Animals.</em> 探讨二次元对“萌要素”作为形式符号的消费与审美解构。</li>
+              <li><strong>Lorenz, K. (1943).</strong> <em>Die angeborenen Formen möglicher Erfahrung (Baby Schema / Kindchenschema).</em> 揭示人类对幼态特征的本能保护与抚育欲。</li>
+              <li><strong>Bowlby, J. (1969).</strong> <em>Attachment and Loss: Vol. 1. Attachment.</em> 照料行为系统（Caregiving System）向虚拟角色的准社会投射。</li>
+              <li><strong>Freud, S. (1920).</strong> <em>Beyond the Pleasure Principle.</em> 心理防御机制中的“向纯真无垢状态的良性退行”与情绪舒压。</li>
+            </ol>
+            <div class="copyright-text">
+              © 2026 NCAPI Assessment Project. 纯属二次元文化与虚拟艺术符号学探讨。严守法律道德底线。
+            </div>
+          </footer>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- 提示浮层 Toast -->
+  <div id="toast" class="toast-message"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
